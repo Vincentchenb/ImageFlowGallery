@@ -55,3 +55,66 @@ A beautiful, interactive web application that displays images in a flowing strip
 - Firefox 75+
 - Safari 13+
 - Edge 80+
+
+## File Structure
+`image-flow-gallery/`
+
+`├── index.html          # Main HTML file`
+
+`├── styles.css          # All styling and animations`
+
+`└── script.js           # JavaScript functionality`
+
+## Key Features Explained
+### Dual-Strip Animation
+- Main Strip: High-quality images in center with hover effects
+- Background Strip: Same images blurred and transparent in background
+- Opposite Directions: Creates a dynamic parallax effect
+
+### Image Handling
+- Client-side processing (no server upload)
+- Supports common image formats (JPEG, PNG, GIF, WebP)
+- Maintains image quality while displaying
+
+### Responsive Design
+- Adapts to different screen sizes
+- Maintains aspect ratios
+- Optimized animations for performance
+
+## Customization
+### Changing Animation Speed
+- Modify the animation duration in `styles.css`:
+- For main strip
+
+`animation: scroll-main 20s linear infinite;`
+- For background strip
+  
+`animation: scroll-background 40s linear infinite reverse;`
+
+### Styling Adjustments
+- Change colors in the gradient (linear-gradient properties)
+- Adjust blur effects (backdrop-filter and filter properties)
+- Modify image sizes and spacing
+
+## Performance Notes
+- Images are processed client-side for privacy
+- Smooth animations using CSS will-change property
+- Efficient DOM updates with event delegation
+- Memory management with proper image cleanup
+
+## Troubleshooting
+### Images not uploading?
+- Ensure you're using supported image formats
+- Check browser console for errors
+
+### Animations stuttering?
+- Try with fewer images
+- Ensure browser hardware acceleration is enabled
+  
+### Delete button not working?
+- Refresh the page and try again
+- Check JavaScript console for errors
+
+## License
+This project is open source and available under the MIT License.
+
