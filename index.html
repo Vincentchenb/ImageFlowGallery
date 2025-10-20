@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background strip flowing opposite direction -->
+    <div class="background-strip" id="backgroundStrip"></div>
+    
+    <!-- Main centerpiece image strip -->
+    <div class="main-strip-container">
+        <div class="main-strip" id="mainStrip"></div>
+    </div>
+    
+    <!-- Simple upload button -->
+    <div class="upload-button-container">
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        <label for="imageInput" class="upload-btn">
+            <span>📸</span>
+        </label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
